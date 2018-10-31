@@ -1,0 +1,61 @@
+-GROWTH AND ACIDIFICATION-
+cond            Growth conditions as described in Table 2
+pair            Microbial pairs (isolates and co-cultures) as described in Table 1
+od600           Turbidity measurements from microplate @ 600nm (not blank-corrected)
+sup440          Supernatant OD440nm for blank correction
+sup590          Supernatant OD440nm for blank correction
+bpb440          Supernatant with bromophenol blue (BPB) OD440nm
+bpb590          Supernatant with bromophenol blue (BPB) OD590nm
+
+od600avg        Mean of turbidity (od600) measurements
+sup440avg       Mean of supernatant OD440nm measurements
+sup590avg       Mean of supernatant OD590nm measurements
+bpb440avg       Mean of supernatant with BPB OD440nm measurements
+bpb590avg       Mean of supernatant with BPB OD440nm measurements
+
+od600std        Standard deviation of turbidity (od600) measurements
+sup440std       Standard deviation of supernatant OD440nm measurements
+sup590std       Standard deviation of supernatant OD590nm measurements
+bpb440std       Standard deviation of supernatant with BPB OD440nm measurements
+bpb590std       Standard deviation of supernatant with BPB OD440nm measurements
+
+od600cv         Coefficient of variation for turbidity (od600) measurements
+od_n            Number of replicates of turbidity (od600) measurements
+ph_n            Number of replicates of pH measurements
+od600bs         Blank-corrected turbidity measurements (Culture-Media)
+od440bs         Blank-corrected OD440 measurements (BPB-SUP)
+od590bs         Blank-corrected OD590 measurements (BPB-SUP)
+r590_440        OD440/590 ratio from blank-corrected measurements
+ph              pH from OD440/590 ratio
+ph_cv           Coefficient of variation for ph measurements
+
+od_iav          Average of isolate turbidity null model
+od_iav_ci       (Co-culture turbidity - Average of isolate turbidity) / Average of isolate turbidity
+od_iav_std      Standard Deviation for Average of isolate turbidity
+od_iav_n        Number of replicates of average turbidity (od600) measurements
+od_iav_p        T-test p-value from comparison of od_iav and od600bs
+od_iav_sig      p < 0.05 ?
+
+od_max          Maximum of isolate turbidity null model
+od_max_ci       (Co-culture turbidity - Maximum of isolate turbidity) / Maximum of isolate turbidity
+od_max_std      Standard Deviation for Maximum of isolate turbidity
+od_max_n        Number of replicates of maximum turbidity (od600) measurements
+od_max_p        T-test p-value from comparison of od_max and od600bs
+od_max_sig      p < 0.05 ?
+
+ph_iav          Average of isolate pH (using hydronium ion molarities)
+ph_iav_p        T-test p-value from comparison of ph_iav to ph (using hydronium ion molarities)
+ph_iav_sig      p < 0.05 ?
+ph_min          pH MAX = pH min (lower pH, higher acidity)
+ph_min_p        T-test p-value from comparison of ph_min to ph (using hydronium ion molarities)
+ph_min_sig      p < 0.05 ?
+ph_min_diff1    [Delta]]pH MAX (raw)
+ph_min_diff2    [Delta]]pH' MAX (scaled)
+
+-BIOINFORMATIC ANALYSES-
+dist_prot       Proteome BLAST Distance
+dist_path       Pathway Distance
+seed_compete    Metabolic Seed Competition
+seed_complem    Metabolic Seed Cooperation
+seed_ratio      Metabolic Seed Cooperation / Seed Competition
+dist_ggdc       Genome-Genome-Distance
